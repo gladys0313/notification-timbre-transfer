@@ -4,73 +4,410 @@
     </head>
     <body>
         <nav> 
-<!--             <ul>
+            <ul>
                 <li><a href="">Code</a></li>
                 <li><a href="">Paper</a></li>
-            </ul> -->
+            </ul>
 
         </nav>
         <div class="container">
             <div class="blurb">
-                <h1>Unsupervised Musical Timbre Transfer for Digital Notification Sounds By Learning CycleGAN Model From Unpaired Data</h1>
-                    <p>transfer the musical timbre of notification sounds</p>
+                <h1>Transforming and Embedding Artificial Notification Sounds into Music</h1>
 
-                    <h2 style="text-align:center"> Part I: Notification timbre transfer</h2>
+                    <h2 style="text-align:center"> Part I: Notification timbre transfer to single-instrument timbre</h2>
                      <table style="width:80%; margin: 0px auto;">
                         <tbody><tr>
                             <th></th>
                             <th>original</th>
                             <th>piano</th>
+                            <th>cello</th>
+                            <th>guitar</th>
                         </tr>
                          <tr style="text-align: center;">
                             <td>Notification 1</td>
-                            
                             <td>
                                 <audio controls="controls">
-                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/A.wav" type="audio/wav">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/single-instrument-transfer/67.wav" type="audio/wav">
                                 </audio>
                             </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/single-instrument-transfer/67-piano.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/single-instrument-transfer/67-cello.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/single-instrument-transfer/67-guitar.wav" type="audio/wav">
+                                </audio>
+                            </td>   
 
+                            <td>Notification 2</td>
                             <td>
                                 <audio controls="controls">
-                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/AB.wav" type="audio/wav">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/single-instrument-transfer/31.wav" type="audio/wav">
                                 </audio>
                             </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/single-instrument-transfer/31-piano.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/single-instrument-transfer/31-cello.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/single-instrument-transfer/31-guitar.wav" type="audio/wav">
+                                </audio>
+                            </td> 
+
+                            <td>Notification 3</td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/single-instrument-transfer/80.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/single-instrument-transfer/80-piano.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/single-instrument-transfer/80-cello.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/single-instrument-transfer/80-guitar.wav" type="audio/wav">
+                                </audio>
+                            </td>   
+                                
+                            <td>Notification 4</td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/single-instrument-transfer/93.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/single-instrument-transfer/93-piano.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/single-instrument-transfer/93-cello.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/single-instrument-transfer/93-guitar.wav" type="audio/wav">
+                                </audio>
+                            </td>                                   
+
+                            <td>Notification 5</td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/single-instrument-transfer/95.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/single-instrument-transfer/95-piano.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/single-instrument-transfer/95-cello.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/single-instrument-transfer/95-guitar.wav" type="audio/wav">
+                                </audio>
+                            </td>   
+
+                            <td>Notification 6</td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/single-instrument-transfer/57.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/single-instrument-transfer/57-piano.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/single-instrument-transfer/57-cello.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/single-instrument-transfer/57-guitar.wav" type="audio/wav">
+                                </audio>
+                            </td>   
+
                         </tr>
                     </tbody></table> 
 
 
-                     <h2 style="text-align:center"> Part II: Less-distracting information delivery with timbre-transferred notification</h2>
-<!--                      <table style="width:80%; margin: 0px auto;">
+
+                    <h2 style="text-align:center">Part II: Notification timbre transfer to multi-instrument timbre</h2>
+                    <p> Compared to the transfer to a single-instrument timbre, when a model is trained for a multi-instrument timbre, it is difficult to map a monophonic notification to a homophonic or even polyphonic music piece with several timbre tracks. The original melody envelope can be kept to a good extent, but the output notifications often have an unnatural mixing timbre of the instruments in the target style. </p>
+
+                    <p> We show examples for two target multi-instrument timbres: (1) piano-accompanied violin, (2) a group of orchestra instruments, including string, woodwind, brass, and percussion sections. We first show a sample music for each of these two styles. </p>
+                     <table style="width:80%; margin: 0px auto;">
+                        <tbody><tr>
+                            <th>piano-accompanied violin</th>
+                            <th>orchestra instruments</th>
+                        </tr>
+
+                        <tr style="text-align: center;">
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/multi-instrument-transfer/accompaniedViolin-sample.wav" type="audio/wav">
+                                </audio>
+                            </td>
+
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/multi-instrument-transfer/classical-sample.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                     </tbody></table>
+
+                    <p>In the following, we show notification samples that are transferred to these two multi-instrument timbres</p>
+                     <table style="width:80%; margin: 0px auto;">
                         <tbody><tr>
                             <th></th>
-                            <th>Track 1</th>
-                            <th>Track 2</th>
-                            <th>Track 3</th>
+                            <th>original</th>
+                            <th>piano-accompanied violin</th>
+                            <th>orchestra instruments</th>
+                         </tr>
+                         <tr style="text-align: center;">
+                            <td>Notification 1</td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/multi-instrument-transfer/92.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/multi-instrument-transfer/92-AV.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/multi-instrument-transfer/92-classical.wav" type="audio/wav">
+                                </audio>
+                            </td>
+
+                            <td>Notification 2</td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/multi-instrument-transfer/95.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/multi-instrument-transfer/95-AV.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/multi-instrument-transfer/95-classical.wav" type="audio/wav">
+                                </audio>
+                            </td>
+
+                            <td>Notification 3</td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/multi-instrument-transfer/57.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/multi-instrument-transfer/57-AV.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/multi-instrument-transfer/57-classical.wav" type="audio/wav">
+                                </audio>
+                            </td>                            
+
+                            <td>Notification 4</td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/multi-instrument-transfer/66.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/multi-instrument-transfer/66-AV.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/multi-instrument-transfer/66-classical.wav" type="audio/wav">
+                                </audio>
+                            </td>
+
+                            <td>Notification 5</td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/multi-instrument-transfer/33.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/multi-instrument-transfer/33-AV.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/multi-instrument-transfer/33-classical.wav" type="audio/wav">
+                                </audio>
+                            </td>                            
+
+                         </tr>
+                     </tbody></table>
+
+
+
+                     <h2 style="text-align:center"> Part III: Less distracting information delivery with notification timbre transfer</h2>
+                     <p> A potential application of notification timbre transfer might be less distracting information delivery. Notifications cause stress and distraction which can affect people's task performance, but disabling them is not a satisfying solution for most users because they will become unaware of their activity context. Since digital music has been widespread, researchers have explored to deliver notifications in a less pronounced way by modifying the music that a user is listening to. </p>
+
+                     <p> This concept of embedding notification into music might also be achieved with the notification timbre transfer technique. We could first change the timbre of the notification to match the music being played, then embed the timbre-transferred notification into the music track, and so deliver notifications in a less intrusive manner. </p>
+
+                     <p> We present music examples in the following to demonstrate this concept.</p> 
+
+
+                     <table style="width:80%; margin: 0px auto;">
+                        <tbody><tr>
+                            <th>original piano music</th>
+                            <th>original notification</th>
+                            <th>notification in piano timbre</th>
+                            <th>piano music integrated with notification (at 5s)</th> 
                         </tr>
                          <tr style="text-align: center;">
-                            <td>Lossless</td>
                             <td>
                                 <audio controls="controls">
-                                    <source src="http://audio-mafia.media.mit.edu/codec-ab/media/ffs_samples_for_mushra_2/FS_ORIG 01 - Symphony No. 5- Allegro con brio_MONO.wav" type="audio/wav">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/notification-integration-in-piano/2228_20.wav"  type="audio/wav">
                                 </audio>
                             </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/notification-integration-in-piano/80.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/notification-integration-in-piano/80-piano.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/notification-integration-in-piano/song_2228_20_notification80.wav" type="audio/wav">
+                                </audio>
+                            </td>                            
 
                             <td>
                                 <audio controls="controls">
-                                    <source src="http://audio-mafia.media.mit.edu/codec-ab/media/ffs_samples_for_mushra_2/FS_ORIG 01 Yazz And The Plastic Population - The Only Way Is Up_MONO-2.wav" type="audio/wav">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/notification-integration-in-piano/2196_5.wav"  type="audio/wav">
                                 </audio>
                             </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/notification-integration-in-piano/63.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/notification-integration-in-piano/63-piano.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/notification-integration-in-piano/song_2196_5_notification63.wav" type="audio/wav">
+                                </audio>
+                            </td>  
 
                             <td>
                                 <audio controls="controls">
-                                    <source src="http://audio-mafia.media.mit.edu/codec-ab/media/ffs_samples_for_mushra_2/FS_ORIG 06. Led Zeppelin - The Wanton Song_MONO.wav" type="audio/wav">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/notification-integration-in-piano/2224_7.wav"  type="audio/wav">
                                 </audio>
                             </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/notification-integration-in-piano/57.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/notification-integration-in-piano/57-piano.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/notification-integration-in-piano/song_2224_7_notification57.wav" type="audio/wav">
+                                </audio>
+                            </td>  
+
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/notification-integration-in-piano/2208_10.wav"  type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/notification-integration-in-piano/88.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/notification-integration-in-piano/88-piano.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/notification-integration-in-piano/song_2208_10_notification88.wav" type="audio/wav">
+                                </audio>
+                            </td>  
+
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/notification-integration-in-piano/2207_7.wav"  type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/notification-integration-in-piano/31.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/notification-integration-in-piano/31-piano.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="controls">
+                                    <source src="https://raw.githubusercontent.com/gladys0313/notification-timbre-transfer/main/notification-integration-in-piano/song_2207_7_notification31.wav" type="audio/wav">
+                                </audio>
+                            </td>  
 
                         </tr>
-
-                    </tbody></table>  -->
+                    </tbody></table> 
 
                     
 
