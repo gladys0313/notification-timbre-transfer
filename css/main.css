@@ -1,6 +1,6 @@
 body {
     margin: 40px auto;
-    width: 95%;
+    width: 90%;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -27,10 +27,14 @@ h2 {
     font-size: 1.2em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
+h3 {
+    font-size: 1.2em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+}
 
 p {
-    font-size: 0.8em;
-    line-height: 1.0em;
+    font-size: 1.0em;
+    line-height: 1.2em;
     color: #333;
 }
 footer {
@@ -39,8 +43,8 @@ footer {
 }
 
 ul.posts { 
-    margin: 10px auto 20px; 
-    font-size: 0.8em;
+    margin: 15px auto 30px; 
+    font-size: .8em;
 }
 
 ul.posts li {
@@ -48,7 +52,7 @@ ul.posts li {
 }
 
 audio {
-    width: 95%;
+    width: 90%;
 }
 table
 {
