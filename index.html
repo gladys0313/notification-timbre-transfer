@@ -10,14 +10,38 @@
             </ul>
 
         </nav> -->
-    <center>
         <div class="container">
             <div class="blurb">
+                <center>
                 <h1>Transforming and Embedding Artificial Notification Sounds into Music</h1>
-                     </center>                 
+                <h3> Jing Yang, Tristan Cinquin, Gábor Sörös </h3>
+                </center>              
+
+                <p> We train a neural network to transform artificial notification sounds into different musical timbres. In addition, we envision notification timbre transfer as a way of less distracting information delivery, by embedding a notificaion into the music piece that a user is listening to after the timbre transfer. </p>
+
+                <br>
+
+                <p> The notification timbre transfer network is based on the CycleGAN structure, trained with unpaired samples. For the source domain, to tackle the issues of ambiguous timbre definition and insufficient training data of notification sounds, we use video game music that shares similar timbral features. The video game music was collected from the following YouTube sites: <cite><a href="https://www.youtube.com/watch?v=JCF0lbqCWl8">video game music 1</a></cite>, <cite><a href="https://www.youtube.com/watch?v=iUdXKu31tQI">video game music 2</a></cite>, <cite><a href="https://www.youtube.com/watch?v=sJonZxlGDKc">video game music 3</a></cite>, <cite><a href="https://www.youtube.com/watch?v=nxbLqkGa4Kk">video game music 4</a></cite>, <cite><a href="https://www.youtube.com/watch?v=AaUAIPKdzls">video game music 5</a></cite>, <cite><a href="https://www.youtube.com/watch?v=sfyvAQemik4">video game music 6</a></cite>. </p>
+
+                <br>
+
+                <p> For the target domain, we collect music of different instrument timbres from the <cite><a href="https://homes.cs.washington.edu/~thickstn/musicnet.html">MusicNet</a></cite> dataset and YouTube:</p>
+                <p>
+                <ol>
+                    <li>Piano: MusicNet</li>
+                    <li>Cello: MusicNet</li>
+                    <li>Guitar: <cite><a href="https://www.youtube.com/watch?v=C_GW8XnEyY0">Best of Bach - Classical Guitar Compilation - BWV</a></cite></li>
+                    <li>Piano-accompanied violin: MusicNet</li>
+                    <li>Orchestra instruments (string, woodwind, brass, percussion sections, etc.): <cite><a href="https://www.youtube.com/watch?v=5VB1RvyfISM">The Best of Classical Music</a></cite></li>
+                </ol>
+                </p>
+
+                <br>
+                <br>
+
 
                     <h2 style="text-align:center"> Part I: Notification timbre transfer to single-instrument timbre</h2>
-                     <table style="width:80%; margin: 0px auto;">
+                     <table style="width:90%; margin: 0px auto;">
                         <tr>
                             <th></th>
                             <th>original</th>
@@ -170,13 +194,15 @@
                          </tr>
                     </tbody></table> 
 
+                    <br>
+                    <br>
 
 
                     <h2 style="text-align:center">Part II: Notification timbre transfer to multi-instrument timbre</h2>
-                    <p> Compared to the transfer to a single-instrument timbre, when a model is trained for a multi-instrument timbre, it is difficult to map a monophonic notification to a homophonic or even polyphonic music piece with several timbre tracks. The original melody envelope can be kept to a good extent, but the output notifications often have an unnatural mixing timbre of the instruments in the target style. </p>
+                    <p> Compared to the transfer to a single-instrument timbre, when a model is trained for a multi-instrument timbre, it is difficult to map a monophonic notification to a homophonic or even polyphonic music piece with several timbre tracks. The original melody envelope of the notification can still be kept to a good extent, but the output notifications often have an unnatural mixing timbre of the instruments in the target style. </p>
 
-                    <p> We show examples for two target multi-instrument timbres: (1) piano-accompanied violin, (2) a group of orchestra instruments, including string, woodwind, brass, and percussion sections. We first show a sample music for each of these two styles. </p>
-                     <table style="width:80%; margin: 0px auto;">
+                    <p> We show examples for two target multi-instrument timbres: (1) piano-accompanied violin, (2) orchestra instruments. We first show a sample music for each of these two styles. </p>
+                     <table style="width:90%; margin: 0px auto;">
                         <tbody><tr>
                             <th>piano-accompanied violin</th>
                             <th>orchestra instruments</th>
@@ -302,17 +328,19 @@
                          </tr>
                      </tbody></table>
 
+                     <br>
+                     <br>
 
 
                      <h2 style="text-align:center"> Part III: Less distracting information delivery with notification timbre transfer</h2>
                      <p> A potential application of notification timbre transfer might be less distracting information delivery. Notifications cause stress and distraction which can affect people's task performance, but disabling them is not a satisfying solution for most users because they will become unaware of their activity context. Since digital music has been widespread, researchers have explored to deliver notifications in a less pronounced way by modifying the music that a user is listening to. </p>
 
-                     <p> This concept of embedding notification into music might also be achieved with the notification timbre transfer technique. We could first change the timbre of the notification to match the music being played, then embed the timbre-transferred notification into the music track, and so deliver notifications in a less intrusive manner. </p>
+                     <p> The concept of embedding notification into music might also be achieved with the notification timbre transfer technique. We could first change the timbre of the notification to match the music being played, then embed the timbre-transferred notification into the music track, and so deliver notifications in a less intrusive manner. </p>
 
-                     <p> We present music examples in the following to demonstrate this concept.</p> 
+                     <p> We present music examples to demonstrate this concept.</p> 
 
 
-                     <table style="width:80%; margin: 0px auto;">
+                     <table style="width:90%; margin: 0px auto;">
                         <tbody><tr>
                             <th>original piano music</th>
                             <th>original notification</th>
@@ -435,13 +463,14 @@
                         </tr>
                     </tbody></table> 
 
-                    
+                    <br>
+                    <br>
 
             </div><!-- /.blurb -->
         </div><!-- /.container -->
         <footer>
             <ul>
-                <li>To be added</li>
+<!--                 <li>To be added</li> -->
             </ul>
             
         </footer>
