@@ -537,9 +537,9 @@
                     
                     <h2 style="text-align:center"> Part IV: Comparison between the models trained using video game music and electronic music</h2>
 
-                    <p> In addition to the video game music, we have also explored the performance of the model trained using electronic music as the source data, considering the potential timbral similarity between the electronic music and the notification sounds. The electronic music was collected from the <cite><a href="http://marsyas.info/downloads/datasets.html">GTZAN dataset</a></cite>. We found that using the electronic music led to generally less satisfying output notifications than using the video game music to train the timbre transfer model, although some of the results sound comparable.</p>
+                    <p>In addition to the video game music, we have also explored the performance of the model trained using electronic music as the source data, since we assumed timbral similarity between the electronic music and the notification sounds. The electronic music was collected from the <cite><a href="http://marsyas.info/downloads/datasets.html">GTZAN dataset</a></cite>. We found that using the electronic music, in general, led to less satisfying output notifications than using the video game music to train the timbre transfer model.</p>
 
-                    <p>One potential reason might be related to the musical timbre. By visualizing the VGGish feature vectors (see Section 3.1 of our paper), we found that the timbre of the electronic music is overall less similar to the notification sounds than the video game music. See the following figures. </p>
+                    <p>One reason could be related to the musical timbre. By visualizing the VGGish feature vectors (see more explanation in Section 3.1 of our paper), we found that compared to the video game music, the musical timbre of the electronic music is overall less similar to the notification sounds. The following figures highlight the comparison in the dark blue rectangle frames. </p>
 
                     <div class="row">
                         <div class="column">
@@ -550,9 +550,9 @@
                         </div>
                     </div>
 
-                    <p>Note that it is normal that the VGGish feature vector clusters in the above figures look not exactly the same as those in Fig.2 of our paper, due to, e.g. the re-initialization of the t-SNE algorithm for plotting.</p>
+                    <p>Note: it is normal that the VGGish feature vector clusters in the above figures look not exactly the same as those in Fig.2 of our paper, due to, e.g. the re-initialization of the t-SNE algorithm for plotting.</p>
 
-                    <p>You can listen to the following audio samples to experience the perception difference between the models trained using the video game music and using the electronic music. </p>
+                    <p>You can listen to the following audio samples to experience the perception difference between the models trained using the video game music and using the electronic music, respectively. </p>
 
                     <table style="width:90%; margin: 0px auto;">
                         <tr>
