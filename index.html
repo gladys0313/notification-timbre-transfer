@@ -17,9 +17,9 @@
                 <h3> Jing Yang, Tristan Cinquin, Gábor Sörös </h3>
                 </center>              
 
-                <p> We train a neural network to transform artificial notification sounds into different musical timbres. In addition, we envision notification timbre transfer as a way of less distracting information delivery, by embedding a notificaion into the music piece that a user is listening to after the timbre transfer. </p>
+                <p> We train a neural network to transform artificial notification sounds into different musical timbres. In addition, we envision notification timbre transfer as a way of less distracting information delivery by embedding a timbre-transformed notificaion into the music piece that a user is listening to. </p>
 
-                <p> Our notification timbre transfer network is based on the CycleGAN structure, trained with unpaired samples. For the source domain, to tackle the issues of ambiguous timbre definition and insufficient training data of notification sounds, we use video game music that shares similar timbral features. The video game music was collected from the following YouTube sites: <cite><a href="https://www.youtube.com/watch?v=JCF0lbqCWl8">video game music 1</a></cite>, <cite><a href="https://www.youtube.com/watch?v=iUdXKu31tQI">video game music 2</a></cite>, <cite><a href="https://www.youtube.com/watch?v=sJonZxlGDKc">video game music 3</a></cite>, <cite><a href="https://www.youtube.com/watch?v=nxbLqkGa4Kk">video game music 4</a></cite>, <cite><a href="https://www.youtube.com/watch?v=AaUAIPKdzls">video game music 5</a></cite>, <cite><a href="https://www.youtube.com/watch?v=sfyvAQemik4">video game music 6</a></cite>. </p>
+                <p> Our notification timbre transfer network is based on the CycleGAN structure, trained with unpaired samples. For the source domain, to tackle the issues of ambiguous timbre definition and insufficient training data of notification sounds, we use video game music that shares similar timbral features with notification sounds. The video game music was collected from the following YouTube sites: <cite><a href="https://www.youtube.com/watch?v=JCF0lbqCWl8">video game music 1</a></cite>, <cite><a href="https://www.youtube.com/watch?v=iUdXKu31tQI">video game music 2</a></cite>, <cite><a href="https://www.youtube.com/watch?v=sJonZxlGDKc">video game music 3</a></cite>, <cite><a href="https://www.youtube.com/watch?v=nxbLqkGa4Kk">video game music 4</a></cite>, <cite><a href="https://www.youtube.com/watch?v=AaUAIPKdzls">video game music 5</a></cite>, <cite><a href="https://www.youtube.com/watch?v=sfyvAQemik4">video game music 6</a></cite>. </p>
 
                 <p> For the target domain, we collect music of different instrument timbres from the <cite><a href="https://homes.cs.washington.edu/~thickstn/musicnet.html">MusicNet</a></cite> dataset and YouTube:</p>
                 <p>
@@ -32,9 +32,11 @@
                 </ol>
                 </p>
 
+                <p> The source codes for (1) training the notification timbre transfer model and (2) objective evaluations of melody preservation can be found in the <cite><a href="https://github.com/gladys0313/notification-timbre-transfer/tree/main/code">github repo</a></cite>.  </p> 
+                 
                 <br>
                 <br>
-
+                <br>
 
                     <h2 style="text-align:center"> Part I: Notification timbre transfer to single-instrument timbre</h2>
                      <table style="width:90%; margin: 0px auto;">
@@ -192,7 +194,7 @@
 
                     <br>
                     <br>
-
+                    <br>
 
                     <h2 style="text-align:center">Part II: Notification timbre transfer to multi-instrument timbre</h2>
                     <p> Compared to the transfer to a single-instrument timbre, when a model is trained for a multi-instrument timbre, it is difficult to map a monophonic notification to a homophonic or even polyphonic music piece with several timbre tracks. The original melody envelope of the notification can still be kept to a good extent, but the output notifications often have an unnatural mixed timbre of the instruments in the target style. </p>
@@ -326,7 +328,7 @@
 
                      <br>
                      <br>
-
+                     <br>
 
                      <h2 style="text-align:center"> Part III: Less distracting information delivery with notification timbre transfer</h2>
                      <p> A potential application of notification timbre transfer might be less distracting information delivery. Notifications cause stress and distraction which can affect people's task performance, but disabling them is not a satisfying solution for most users because they will become unaware of their activity context. Since digital music has been widespread, researchers have explored to deliver notifications in a less pronounced way by modifying the music that a user is listening to. </p>
@@ -532,8 +534,6 @@
                     <br>
                     <br>
                     <br>
-                    <br>
-                    <hr>
                     
                     <h2 style="text-align:center"> Part IV: Comparison between the models trained using video game music and electronic music</h2>
 
