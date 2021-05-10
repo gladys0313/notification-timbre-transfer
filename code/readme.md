@@ -4,4 +4,4 @@ Audio_Style_Transfer_Training:
 - conduct timbre transfer for new input data using the trained model 
 
 Audio_Style_Transfer_Objective_evaluation: 
-- implement the two objective evaluation of melody preservation (pitch similarity and rhythm similarity)
+- implement the two objective evaluations of melody preservation (pitch similarity and rhythm similarity)
